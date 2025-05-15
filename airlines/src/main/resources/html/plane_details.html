@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Деталі літака</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Деталі літака</h1>
+
+    <div class="plane-details">
+        <p><strong>ID:</strong> {{id}}</p>
+        <p><strong>Модель:</strong> {{model}}</p>
+        <p><strong>Місткість:</strong> {{capacity}}</p>
+    </div>
+
+    <div class="buttons">
+        <a href="/plane/edit?id={{id}}"><button>Редагувати</button></a>
+        <a href="/plane/delete?id={{id}}"><button>Видалити</button></a>
+        <a href="/"><button>Назад до списку</button></a>
+    </div>
+</body>
+</html>

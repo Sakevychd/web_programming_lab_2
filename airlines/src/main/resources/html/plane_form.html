@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма літака</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Інформація про літак</h1>
+
+    <form method="post" action="/plane/save">
+        <input type="hidden" name="id" value="{{id}}">
+        
+        <label for="model">Модель:</label>
+        <input type="text" id="model" name="model" value="{{model}}" required>
+
+        <label for="capacity">Місткість:</label>
+        <input type="number" id="capacity" name="capacity" value="{{capacity}}" required>
+
+        <button type="submit">Зберегти</button>
+        <a href="/"><button type="button">Назад</button></a>
+    </form>
+</body>
+</html>
