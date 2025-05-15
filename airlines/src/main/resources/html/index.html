@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список літаків</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Літаки</h1>
+
+    <a href="/plane/create"><button>Додати літак</button></a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Модель</th>
+                <th>Місткість</th>
+                <th>Дії</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Приклад запису, заміниться динамічно -->
+            <tr>
+                <td>1</td>
+                <td>Boeing 737</td>
+                <td>180</td>
+                <td>
+                    <a href="/plane/view?id=1"><button>Переглянути</button></a>
+                    <a href="/plane/edit?id=1"><button>Редагувати</button></a>
+                    <a href="/plane/delete?id=1"><button>Видалити</button></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
